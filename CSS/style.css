@@ -4,6 +4,26 @@
     font-family: Helvetica;
     box-sizing: border-box;
 }
+header {
+      display: flex;
+      align-items: center;
+      background-color: #ffff;
+      padding: 10px 20px;
+    }
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2d3eff;
+  padding: 5px 20px;
+}
+
+.logo{
+    width: 100px;
+    margin-top: -5px;
+}
+
 
 h1,
 h2,
@@ -26,10 +46,7 @@ nav{
     position: relative;
 }
 
-.logo{
-    width: 65px;
-    margin-top: 55px;
-}
+
 .navbar-items{
     position: absolute;
     right: 35;
@@ -63,15 +80,44 @@ nav{
     background-color: #22DAF5;
     color: #fff;
 }
+.barra-lateral{
+  width: 180px;
+  background-color: #2d3eff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  gap: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; 
+}
+.barra-lateral a{
+   color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  
+}
+.barra-lateral a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.conteudo {
+  margin-left: 200px; 
+  flex: 1;
+}
 
 .destaques .produtos{
-    display: grid;
+  display: grid;
   grid-template-columns:  repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 20px;
   padding: 20px;
   background-color: #f5f5f5;
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -86,13 +132,61 @@ nav{
 
 .destaques .produtos img{
     width: 100%;
-    max-width: 250px;
+    max-width: 1200px;
     border-radius: 8px;
 }
 
 .destaques .produtos figcaption{
      margin-top: 8px;
-      font-size: 0.9rem;
-      color: #555;
+      font-size: 14px;
       text-align: center;
+}
+.destaques .produtos figure:last-child(odd){
+     grid-column: 1 / -1;
+     justify-self:center ;
+    }
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    width: 200px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.nav a{
+    position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+}
+ nav a:hover {
+      background-color: #666;
+      transform: scale(1.05);
+    }
+    
+.conteúdo .itens{
+      margin-left: 200px; 
+      padding: 20px;
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      width: 100%;
+    }
+   
+.item {
+  display: none; 
+}
+
+.item.mostrar {
+  display: block; 
 }
