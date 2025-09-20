@@ -22,11 +22,16 @@
                         <li><a href="sobre nós"> Sobre nós </a></li>
                         <li><a href="#"class="default-btn">Pesquisar</a></li>
                     </ul>
-                </nav>
-        
+                </nav>       
             </div>
         </header>
-        <main>
+         <aside class="barra-lateral">
+                <a href="#">Tanques</a>
+                <a href="#">Valvulas</a>
+                <a href="#">Permutadores</a>
+                <a href="#">Resistência</a>
+             </aside>
+        <main class="conteúdo">            
             <div class="destaques">
              <section class="produtos">
                 <h3>Nossos Destaques</h3>
@@ -55,9 +60,58 @@
                         <h4> Resistência de tanque lacteo</h4>
                         <p>Resistência de tanque lacteo, diversos tamanhos e potências</p>
                     </figure>
-
-            </div>
+                    
+                    <figure>
+                        <img src="Imagens/permutador.jpg" alt="permutador de tanuqe lacteo">
+                        <figcaption>Permutador para tanque lacteo de 5000 litros</figcaption>
+                    </figure>
+                  
+                    <figure>
+                        <img src="Imagens/tanques.jpg" alt="Tanque lacteo de 500 litros">
+                    </figure>
+            </div>           
         </main>
+    <aside class="barra-lateral">
+         <img src="logo.png" alt="Logotipo" class="logo">
+            <nav class="menu-lateral">
+                <a href="#" data-categoria="tanques">Tanques</a>
+                <a href="#" data-categoria="valvulas">Válvulas</a>
+                <a href="#" data-categoria="permutadores">Permutadores</a>
+                <a href="#" data-categoria="resistencia">Resistência</a>
+            </nav>
+    </aside>
+
+   <div class="filtros">
+        <button data-filtro="todos">Todos</button>
+        <button data-filtro="tanques">Tanques</button>
+        <button data-filtro="valvulas">Válvulas</button>
+        <button data-filtro="permutadores">Permutadores</button>
+        <button data-filtro="resistencia">Resistências</button>
+    </div>
+
+    <div class="conteudo-itens">
+        <section class="item" data-categoria="tanques">
+            <h2>Tanque 1</h2>
+            <img src="Imagens/tanques.jpg" alt="Tanque lacteo 500 litros">
+        </section>
+
+        <section class="item" data-categoria="valvulas">
+            <h2>Válvula 1</h2>
+            <img src="Imagens/valvula.jpg" alt="valula borboleta para tanque">
+        </section>
+
+        <section class="item" data-categoria="permutadores">
+            <h2>Permutador 1</h2>
+            <img src="Imagens/permutador.jpg" alt="permutador de tanque lacteo">
+        </section>
+
+        <section class="item" data-categoria="resistencia">
+            <h2>Resistência 1</h2>
+            <img src="Imagens/resistencia.jpg" alt="resistencia de tanque lacteos">
+        </section>
+    </div>
+    </div>
+
     </div>
     
 </body>
