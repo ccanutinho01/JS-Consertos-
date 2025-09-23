@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - JL Consertos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>JL Consertos</h1>
+        <nav>
+            <a href="index.html">🏠 Página Inicial</a>
+            <a href="produtos.html" class="ativo">🛠 Produtos</a>
+            <a href="contatos.html">📞 Contatos</a>
+        </nav>
+    </header>
+
+    <aside class="menu-produtos">
+        <button data-categoria="todos">Todos</button>
+        <button data-categoria="tanques">Tanques</button>
+        <button data-categoria="valvulas">Válvulas</button>
+        <button data-categoria="permutadores">Permutadores</button>
+        <button data-categoria="resistencia">Resistência</button>
+    </aside>
+
+    <main class="conteudo-produtos">
+        <h2>Nossos Produtos e Serviços</h2>
+
+        <div class="grid-produtos">
+            <div class="item" data-categoria="tanques">
+                <h3>Tanque 500L</h3>
+                <img src="Imagens/tanques.jpg" alt="Tanque lacteo 500 litros">
+                <p>Tanque para resfriamento de leite, 500 litros, aço inox.</p>
+            </div>
+
+            <div class="item" data-categoria="valvulas">
+                <h3>Válvula Borboleta</h3>
+                <img src="Imagens/valvula.jpg" alt="Válvula borboleta">
+                <p>Válvula borboleta em inox, vários tamanhos.</p>
+            </div>
+
+            <div class="item" data-categoria="permutadores">
+                <h3>Permutador</h3>
+                <img src="Imagens/permutador.jpg" alt="Permutador de tanque lacteo">
+                <p>Permutador para resfriamento de grandes tanques, até 5000L.</p>
+            </div>
+
+            <div class="item" data-categoria="resistencia">
+                <h3>Resistência</h3>
+                <img src="Imagens/resistencia.jpg" alt="Resistência de tanque">
+                <p>Resistências para tanques de diversos tamanhos e potências.</p>
+            </div>
+        </div>
+    </main>
+    <main class="conteudo-produtos">
+    <h2>Produtos</h2>
+    <!-- Seus produtos aqui -->
+
+    <!-- Botão para abrir o formulário -->
+    <button id="btn-agendar" class="btn-agendar">Agendar Serviço</button>
+
+    <!-- Formulário de agendamento (inicialmente escondido) -->
+    <form id="form-agendamento" class="form-agendamento">
+        <h3>Agende um Serviço</h3>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="servico">Tipo de serviço:</label>
+        <select id="servico" name="servico" required>
+            <option value="">Selecione</option>
+            <option value="instalacao">Instalação</option>
+            <option value="manutencao">Manutenção</option>
+            <option value="limpeza">Limpeza</option>
+        </select>
+
+        <label for="data">Data desejada:</label>
+        <input type="date" id="data" name="data" required>
+
+        <button type="submit" class="btn-enviar">Enviar Agendamento</button>
+    </form>
+
+    <!-- Mensagem de retorno -->
+    <p id="msg-agendamento" class="msg-agendamento"></p>
+</main>
+
+<script src="produtos.js"></script>
+
+
+    <script src="JS/produtos.js"></script>
+</body>
+</html>
