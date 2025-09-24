@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário - JL Consertos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JL Consertos</h1>
+            <div class="navbar-container">
+                <nav aria-label="Menu principal">
+                    <a href="index.html">
+                        <img src="Imagens/Logotipo.jpg" alt="Logotipo da JL Consertos" class="logo">
+                    </a>
+                    <ul class="navbar-items">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
+                        <li><a href="sobre.html">Sobre nós</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="conteudo-login">
+            <h2>Cadastro de Usuário</h2>
+            <form id="form-cadastro" class="form-login">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Crie um nome de usuário" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+
+                <label for="confirmar-senha">Confirmar Senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+
+                <button type="submit" class="btn-enviar">Cadastrar</button>
+            </form>
+
+            <p id="msg-cadastro" class="msg-login" aria-live="polite"></p>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 JL Consertos - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>

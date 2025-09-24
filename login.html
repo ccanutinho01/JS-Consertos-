@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - JL Consertos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JL Consertos</h1>
+            <div class="navbar-container">
+                <nav aria-label="Menu principal">
+                    <a href="index.html">
+                        <img src="Imagens/Logotipo.jpg" alt="Logotipo da JL Consertos" class="logo">
+                    </a>
+                    <ul class="navbar-items">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
+                        <li><a href="sobre.html">Sobre nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="conteudo-login">
+            <h2>Área do Usuário</h2>
+            <form id="form-login" class="form-login">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+                <button type="submit" class="btn-enviar">Entrar</button>
+            </form>
+
+            <p id="msg-login" class="msg-login" aria-live="polite"></p>
+        </main>
+        
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
